@@ -5,8 +5,14 @@
 }
 
 .container{
-    max-width: 1170px;
+    width: 400px;
     margin: auto;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .row{
     width: 100%;
@@ -22,6 +28,9 @@
 }
 .p-1{
     padding: 4px;
+}
+.m-center{
+    margin: auto;
 }
 /*-------------------------------------
                 AUTO LAYOUT
@@ -72,7 +81,48 @@
     /* width 100% */
 }
 
-
+/*-------------------------------------
+                offset
+--------------------------------------*/
+.col-offset-1{
+    margin-left: calc((100% / 12) * 1);
+}
+.col-offset-2{
+    margin-left: calc((100% / 12) * 2);
+}
+.col-offset-3{
+    margin-left: calc((100% / 12) * 3);
+}
+.col-offset-4{
+    margin-left: calc((100% / 12) * 4);
+}
+.col-offset-4_6{
+    margin-left: calc((100% / 12) * 4.6);
+}
+.col-offset-5{
+    margin-left: calc((100% / 12) * 5);
+}
+.col-offset-6{
+    margin-left: calc((100% / 12) * 6);
+}
+.col-offset-7{
+    margin-left: calc((100% / 12) * 7);
+}
+.col-offset-8{
+    margin-left: calc((100% / 12) * 8);
+}
+.col-offset-9{
+    margin-left: calc((100% / 12) * 9);
+}
+.col-offset-10{
+    margin-left: calc((100% / 12) * 10);
+}
+.col-offset-11{
+    margin-left: calc((100% / 12) * 11);
+}
+.col-offset-12{
+    margin-left: calc((100% / 12) * 12);
+}
 /*-------------------------------------
                 text-align
 --------------------------------------*/
@@ -86,4 +136,18 @@
 .ver-align{
     align-items: center;
     vertical-align: middle;
+}
+
+
+/* LAPTOP */
+@media screen and (min-width:500px){
+    .container{
+        width: 650px;
+    }
+}
+/* DESKTOP */
+@media screen and (min-width:1024px){
+    .container{
+        width: 1000px;
+    }
 }

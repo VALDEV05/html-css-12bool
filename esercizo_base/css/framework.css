@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.col-flex{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.p-1{
+    padding: 4px;
+}
+/*-------------------------------------
+                AUTO LAYOUT
+--------------------------------------*/
+.col-auto{
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 100%;
+}
+/*-------------------------------------
+                LAYOUT
+--------------------------------------*/
+.col-1{
+    width: calc((100% / 12) * 1);
+}
+.col-2{
+    width: calc((100% / 12) * 2);
+}
+.col-3{
+    width: calc((100% / 12) * 3);
+}
+.col-4{
+    width: calc((100% / 12) * 4);
+}
+.col-5{
+    width: calc((100% / 12) * 5);
+}
+/* creo una colonna del 50% della larghezza del contenitore */
+.col-6{
+    width: calc((100% / 12) * 6);
+    /* width 50% */
+}
+.col-8{
+    width: calc((100% / 12) * 8);
+}
+.col-9{
+    width: calc((100% / 12) * 9);
+}
+.col-10{
+    width: calc((100% / 12) * 10);
+}
+.col-11{
+    width: calc((100% / 12) * 11);
+}
+/* creo una colonna del 100% della larghezza del contenitore */
+.col-12{
+    width: calc((100% / 12) * 12);
+    /* width 100% */
+}
+
+
+/*-------------------------------------
+                text-align
+--------------------------------------*/
+/*--------- Due possibilità per allineamento, la prima
+            per elementi flessibili, la seconda per i non.
+            Se usi la seconda ricordati la line-height ---------*/
+.hor-align{
+    justify-content: center;
+    text-align: center;
+}
+.ver-align{
+    align-items: center;
+    vertical-align: middle;
+}

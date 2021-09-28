@@ -1,0 +1,15 @@
+.sec_up{
+    height: 200px;
+    background-color: #FFC0CB;
+    border: 1px solid black;
+    line-height: 200px;
+}
+.sec_down{
+    height: 180px;
+    background-color: #F07F80;
+    border: 1px solid rgb(255, 255, 255);
+    line-height: 200px;
+}
+.col-2.sec_down p{
+    font-size: 12px;
+}
